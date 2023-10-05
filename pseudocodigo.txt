@@ -1,0 +1,40 @@
+Procedimiento selectionSort(arr: arreglo de enteros)
+    n = longitud(arr)   # Obtener la longitud del arreglo
+    Para i de 0 a n - 1
+        minIndex = i   # Suponer que el elemento actual es el mínimo
+
+        # Buscar el índice del elemento mínimo en el subarreglo restante
+        Para j de i + 1 a n - 1
+            Si arr[j] < arr[minIndex] Entonces
+                minIndex = j
+
+        # Intercambiar el elemento mínimo con el elemento actual
+        intercambiar(arr[i], arr[minIndex])
+
+    Fin Para
+Fin Procedimiento
+
+Procedimiento main()
+    arreglo arr = [64, 25, 12, 22, 11]
+    n = longitud(arr)
+
+    # Iniciar el bucle externo (i)
+    Para i de 0 a n - 1
+        minIndex = i   # Suponer que el elemento actual es el mínimo
+
+        # Iniciar el bucle interno (j)
+        Para j de i + 1 a n - 1
+            Si arr[j] < arr[minIndex] Entonces
+                minIndex = j
+
+        # Intercambiar el elemento mínimo con el elemento actual
+        intercambiar(arr[i], arr[minIndex])
+
+    Fin Para
+
+    # Imprimir el arreglo ordenado
+    Imprimir "Arreglo ordenado:"
+    Para cada elemento en arr
+        Imprimir elemento
+
+Fin Procedimiento

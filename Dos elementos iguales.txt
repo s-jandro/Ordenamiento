@@ -1,0 +1,9 @@
+2. Explique qu´e ocurre cuando se encuentran n´umeros repetidos
+
+En el caso del algoritmo de ordenamiento por selección implementado en MIPS Assembly, cuando se comparan dos elementos iguales, no hay intercambio de valores, al igual que en otros lenguajes de programación. El algoritmo simplemente seguirá buscando el próximo elemento mínimo en el resto del arreglo sin realizar ningún cambio.
+
+Cuando se encuentran elementos iguales, el algoritmo de selección no los intercambia, lo que significa que el orden relativo de los elementos iguales se conservará en el arreglo ordenado.
+
+Cuando la comparación $t6 y $t7 resulta en igualdad ($t6 == $t7), el programa simplemente continúa sin hacer ningún intercambio, ya que no hay necesidad de hacerlo.
+
+Esto asegura que los elementos iguales en el arreglo mantengan su orden relativo original en el arreglo ordenado, como se esperaría en el algoritmo de selección.
